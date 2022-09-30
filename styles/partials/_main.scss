@@ -1,0 +1,268 @@
+                        // main index
+
+.main-index{
+    padding: 0 !important;
+}
+
+.intro{
+    background-color: map-get($estilos, colorPrimario);
+    width: 100% !important;
+    margin: 0;
+
+    .carouselBorde{
+        padding-top: 30px !important;
+
+        .imgHome{
+            margin-inline-start: 20px;
+            margin-bottom: 100px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.664), 0 6px 20px 0 rgba(0, 0, 0, 0.511);
+        }
+
+    }
+}
+
+.texto-home{
+    color: $font-white;
+    margin-inline-start: 2em;
+    margin-inline-end: 2em;
+
+    .titulo-home{
+        margin-bottom: 2em;
+    }
+
+    .titulo-home:hover{
+        transform:scale(1.10);
+    }
+
+    .home-texto{
+        font-size: 2.5em;
+    }
+
+    .home-texto:hover{
+        transform:scale(1.10);
+    }
+}
+
+.intro2{
+    background-image: url(../img/imagenfondo-home.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    background-attachment: fixed;
+    margin: 0;
+
+    .cuestionario{
+        color: $font-white;
+        display: inline;
+        align-self: center;
+        
+        .titulo-cuestionario{
+            font-size: 4em;
+        }
+
+        .texto-cuestionario{
+            font-size: 2.5em;
+        }
+    }
+
+    .link-cuestionario{
+        display: inline;
+        align-self: flex-end;
+        margin-bottom: 2em;
+        font-size: 5em;
+        color: $font-white;
+        background-color: #23242695; 
+        margin-inline-start: 2em;
+        margin-inline-end: 2em;
+    }
+
+    .enlace{
+        text-decoration: none;
+        color: $font-white;
+    }
+
+    .link-cuestionario:hover{
+        transform: scale(1.03);
+    }
+}
+
+                        // main sobre mi
+
+.biografia{
+    background-color: map-get($estilos, colorSecundario);
+    height: 900px;
+
+    .sobreMi{
+        display: inline;
+        align-self: center;
+        color: $font-white;
+
+        .titulo-sobremi{
+            font-size: 4em;
+            margin-bottom: 1em;
+        }
+
+        .texto-sobremi{
+            font-size: 1.4em;
+            margin-inline-start: 2em;
+            margin-inline-end: 2em;
+        }
+    }
+
+    .img-sobremi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .dani-sobremi{
+            height: 700px;
+            box-shadow: 0 0 15px 7px rgba(253, 242, 248, 0.415);
+        }
+    }
+}
+
+.section-collage{
+    .img-collage{
+        width: 50em;
+    }
+
+    .fraseKarl{
+        display: inline;
+        align-self: center;
+        margin: 0;
+        
+    }
+}
+
+
+                        // main cuestionario
+
+.mainCuestionario{
+
+    .sectionCuestionario{
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    background-color: #D9C2AD;
+
+    .divUno {
+        @extend %divsCuestionario;
+        background-color: #232426;
+        transition: transform .2s;
+    
+        .botonCuestionario{
+            @include botones($font-white, #8c796db2);
+        }
+    }
+
+    .divUno:hover{
+        transform: scale(1.05);
+    }
+    
+    .divDos {
+        @extend %divsCuestionario;
+        background-color: #8C796D;
+        transition: transform .2s;
+    }
+
+    .divDos:hover{
+        transform: scale(1.05);
+    }
+}
+                        
+
+
+                        // main servicios
+
+.servicios{
+    background-color: map-get($estilos, colorTerciario);
+
+    .tarjeta{
+        display: flex;
+        justify-content: center;
+
+        .card{
+            background-color: #8C796D;
+        }
+    }
+    
+    .tarjeta:hover{
+        transform:scale(1.10);
+    }
+}
+
+
+
+                        // main moda
+
+.mainModa{
+    background-color: map-get($estilos, colorTerciario);
+
+    .titulos{
+        display: flex !important;
+        justify-content: center !important;
+        color: $font-white;
+        font-size: 3em;
+    }
+
+    .carousel-item{
+        height: 700px;
+        .imgModa{
+            margin: 0 auto;
+        }
+    }
+    
+    .carousel-item:hover{
+        transform:scale(1.10);
+    }
+
+    .carousel-control-prev {
+        margin-left: 30em;
+    }
+
+    .carousel-control-next{
+        margin-right: 30em;
+    }
+}
+
+                        // main contacto
+
+.seccionContacto{
+    background-image: url("../img/tela-blanca.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+    background-attachment: fixed;
+
+    .contactoBox{
+        display: inline-block;
+        width: 30%;
+        height: 50%;
+        background-color: #141313ac;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+
+        .formulario{
+            font-size: 1em;
+            color: #fdf4f4;
+            text-align: center;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .boton{
+                @include botones ($font-black, rgba(110, 60, 68, 0.678)) ;
+            }
+        } 
+    }
+}                        
+                       
+                        
+                        
+                        
+                                             

@@ -1,0 +1,30 @@
+header{
+    .circulo{
+        width: 10rem;
+        height: 5rem;
+        border-radius: 50%;
+        background-color: $background-header !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin:0px auto;
+        padding:3%;
+    
+        .logo{
+            color: $font-black;
+            font-size: 1.4rem;
+            font-weight: bold;
+            display: flex;
+            margin:3% auto;
+        }
+    }
+
+    .item{
+        &:hover{
+            color: $font-black;
+            transform: scale(1.1);
+        }
+    }
+
+}

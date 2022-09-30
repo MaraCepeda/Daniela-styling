@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2? familia= Ibarra+Real+Nova:ital,peso@0,400;0,700;1,500;1,700 &family= Playfair+Display & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body{
+    font-family: 'Ibarra Real Nova', serif;
+}
+ 
+                        /* header */
+
+.circulo{
+    width: 10rem !important;
+	height: 5rem !important;
+	border-radius: 50% !important;
+	background: #D9C2AD !important;
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+	text-align: center !important;
+    margin:0px auto !important;
+    padding:3% !important;
+}
+
+.logo{
+	color: #0b0a0a !important;
+	font-size: 1.4rem !important;
+	font-weight: bold !important;
+    display: flex;
+    margin:3% auto !important;
+}
+/* .encabezado{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+} */
+
+                        /* main index */
+
+.intro{
+    background-color: #8C796D;
+    width: 100% !important;
+}
+
+.carouselBorde{
+    padding-top: 30px !important;
+}
+
+.introduccion{
+    display: flex;
+    align-content: center;
+}
+
+.intro2{
+    background-image: url(../img/imagenfondo-home.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+}
+
+.imgHome{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.664), 0 6px 20px 0 rgba(0, 0, 0, 0.511);
+}
+
+/* .imgHome:hover{
+    transform: scale(1.1);
+} */
+
+
+/* .foto-home{
+    border: 5px solid #f9f2f2 !important;
+
+} */
+
+                        /* main moda */
+
+.mainModa{
+    background-color: rgb(151, 141, 141);
+}
+
+
+
+.titulos{
+    display: flex !important;
+    justify-content: center !important;
+    color: #73351F;
+    font-size: 3em;
+}
+
+.imgModa{
+    margin: 0 auto;
+}
+
+.mainModa{
+    height: 2650px;
+}
+
+                    /* footer */
+
+footer{
+    color: #f6f0f0;
+    background-color: #73351F;
+    font-size: x-large;
+}
+.celular{
+    display: flex;
+    justify-content: center;
+}
+
+.instagram{
+    display: flex;
+    justify-content: center;
+}
+
+                        /* main contacto */
+
+.seccionContacto{
+    background-image: url("../img/torreeiffel.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+}
+
+.contactoBox{
+    display: inline-block;
+    width: 30%;
+    height: 50%;
+    background-color: #141313c6;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.formulario{
+    font-size: 1em;
+    color: #fdf4f4;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+                        /* main servicios */
+
+.servicios{
+    background-color: #232426;
+}
+
+.card{
+    background-color: rgba(244, 236, 236, 0.796);
+}
+
+.tarjeta{
+    display: flex;
+    justify-content: center;
+}
+
+                        /* main sobre mi */
+.tituloSobreMi{
+    color: #f6f0f0c7;
+    font-size: 3em;
+}
+
+.textoSobreMi{
+    font-size: 1.5em;
+    color: #f6f0f0c7;
+}
+
+.fondoCardSobreMi{
+    background-color: #474141;
+}
+
+.dani-sobremi{
+    width: 30em;
+}
+
+.dani-sobremi:hover{
+    transform: scale(0.8);
+}
+
+.card-body{
+    height: 10em;
+}
+
+.tarjeta-frase{
+    font-size: 2em;
+}
+

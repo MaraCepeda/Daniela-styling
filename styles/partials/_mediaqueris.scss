@@ -1,0 +1,557 @@
+@media screen and (min-width: 320px ) and (max-width: 480px) {
+
+    // INDEX
+
+    .index-body{
+    
+        margin: 0;
+        padding: 0;
+
+        .foto-home{
+            margin-top: 2em;
+            margin-bottom: 0;
+            width: 25em;
+        }
+        
+        .texto-home{
+            
+            font-size: 10px !important;
+
+            .titulo-home{
+                font-size: 25px;
+            }
+
+            .home-texto{
+                font-size: 20px;
+            }
+        }
+    
+        .cuestionario{
+    
+            font-size: 10px;
+            margin-top: 4em;
+    
+            .titulo-cuestionario{
+                color: $font-black;
+            }
+    
+            .texto-cuestionario{
+                color: $font-black;
+            }
+    
+        }
+    
+        .intro2{
+            background-image: url(../img/imagenfondo-home.jpg);
+            background-position: center;
+            background-attachment: local;
+            background-size: 70em;
+            background-repeat: no-repeat;
+            height: 30em;
+            margin: 0;
+    
+            .link-cuestionario{
+                display: inline;
+                align-self: center;
+                margin-bottom: 2em;
+                font-size: 2em;
+                color: $font-white;
+                background-color: #23242695; 
+                margin-inline-start: 2em;
+                margin-inline-end: 2em;
+            }
+        
+            .enlace{
+                text-decoration: none;
+                color: $font-white;
+            }
+        }
+
+    }
+
+    // SOBRE MI
+
+    .biografia{
+        background-color: map-get($estilos, colorSecundario);
+        height: 900px;
+    
+        .sobreMi{
+            display: inline;
+            align-self: center;
+            color: $font-white;
+    
+            .titulo-sobremi{
+                font-size: 30px;
+                margin-bottom: 1em;
+            }
+    
+            .texto-sobremi{
+                font-size: 16px;
+                
+            }
+        }
+    
+        .img-sobremi{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .dani-sobremi{
+                height: 400px;
+                box-shadow: 0 0 15px 7px rgba(253, 242, 248, 0.415);
+            }
+        }
+    }
+    
+    .section-collage{
+
+        height: 500px;
+
+        .img-collage{
+            margin-inline-start: 25px;
+            width: 400px;
+        }
+    
+        .fraseKarl{
+            font-size: 14px;
+        }
+    }
+
+    // MODA
+
+    .mainModa{
+        background-color: map-get($estilos, colorTerciario);
+    
+        .titulos{
+            display: flex !important;
+            justify-content: center !important;
+            color: $font-white;
+            font-size: 20px;
+        }
+    
+        .carousel-item{
+            height: 500px;
+            .imgModa{
+                width: 55% !important;
+                margin: 0 auto;
+            }
+        }
+        
+    
+        .carousel-control-prev {
+            margin-left: 10px;
+        }
+    
+        .carousel-control-next{
+            margin-right: 10px;
+        }
+    }
+
+    // FOOTER
+
+    footer{
+
+        height: 9em;
+
+        .whatsapp-instagram{
+            display: flex;
+            justify-content: center;
+            font-size: 15px;
+    
+    
+    
+            .celular{
+                margin-left: 3px;
+                color: $font-white;
+            }
+    
+            .instagram{
+                margin-right: 3px;
+                color: $font-white;
+            }
+    
+        }
+    
+        .derechosReservados{
+            font-size: 15px;
+            justify-content: center;
+        }
+        .sitioDesarrollado{
+            font-size: 15px;
+            justify-content: center;
+        }
+
+    }
+
+    // CUESTIONARIO
+
+    .mainCuestionario{
+
+        .sectionCuestionario{
+            padding-top: 3em;
+            padding-bottom: 3em;
+        }
+    
+        background-color: #D9C2AD;
+    
+        .divUno {
+            color: $font-white;
+            font-size: 15px;
+            text-align: center;
+            width: 80%;
+            border-radius: 1.5em;
+            position: relative;
+            left: 10%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, .7);
+            background-color: #232426;
+        
+            .botonCuestionario{
+                @include botones($font-white, #8c796db2);
+            }
+        }
+    
+        
+        
+        .divDos {
+            color: $font-white;
+            font-size: 15px;
+            text-align: center;
+            width: 80%;
+            border-radius: 1.5em;
+            position: relative;
+            left: 10%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, .7);
+            background-color: #8C796D;
+        }
+    
+        
+    }
+
+    // CONTACTO
+
+    .seccionContacto{
+        background-image: url("../img/tela-blanca.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 800px;
+        background-attachment: fixed;
+    
+        .contactoBox{
+            display: inline-block;
+            width: 20em;
+            height: 25em;
+            background-color: #141313ac;
+            text-align: center;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+    
+            .formulario{
+                font-size: 12px;
+                color: #fdf4f4;
+                text-align: center;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+    
+                .boton{
+                    @include botones ($font-black, rgba(110, 60, 68, 0.678)) ;
+                }
+            } 
+        }
+    }
+
+    
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    // INDEX
+
+    .index-body{
+    
+        margin: 0;
+        padding: 0;
+
+
+        .intro{
+            height: 600px !important;
+
+            .foto-home{
+                margin-top: 2em;
+                margin-bottom: 1em;
+                width: 20em;
+            }
+            
+            .texto-home{
+                padding: 0;
+                margin: 0;
+                margin-inline-end: 20px;
+
+                .titulo-home{
+                    font-size: 19px;
+                    margin-top: 8em;
+                }
+    
+                .home-texto{
+                    font-size: 22px;
+    
+                }
+            }
+        }
+        
+    
+    
+        .intro2{
+            background-image: url(../img/imagenfondo-home.jpg);
+            background-position: center;
+            background-attachment: local;
+            background-size: 70em;
+            background-repeat: no-repeat;
+            height: 30em;
+            margin: 0;
+            
+            .cuestionario{
+    
+                font-size: 10px;
+                margin-top: 4em;
+        
+                .titulo-cuestionario{
+                    color: $font-white;
+                }
+        
+                .texto-cuestionario{
+                    color: $font-white;
+                }
+        
+            }
+
+            .link-cuestionario{
+                display: inline;
+                align-self: center;
+                margin-top: 6em;
+                font-size: 40px;
+                color: $font-white;
+                background-color: #23242695; 
+                margin-inline-start: 2em;
+                margin-inline-end: 2em;
+            }
+        
+            .enlace{
+                text-decoration: none;
+                color: $font-white;
+            }
+        }
+
+    }
+
+    // SOBRE MI
+
+    .biografia{
+        background-color: map-get($estilos, colorSecundario);
+        height: 700px;
+    
+        .sobreMi{
+            display: inline;
+            align-self: center;
+            color: $font-white;
+    
+            .titulo-sobremi{
+                font-size: 30px;
+                margin-bottom: 1em;
+            }
+    
+            .texto-sobremi{
+                font-size: 16px;
+                
+            }
+        }
+    
+        .img-sobremi{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .dani-sobremi{
+                height: 300px;
+                box-shadow: 0 0 15px 7px rgba(253, 242, 248, 0.415);
+            }
+        }
+    }
+    
+    .section-collage{
+
+        height: 600px;
+
+        .img-collage{
+            margin-inline-start: 100px;
+            width: 500px;
+        }
+    
+        .fraseKarl{
+            font-size: 15px;
+        }
+    }
+
+    // MODA
+
+    .mainModa{
+        background-color: map-get($estilos, colorTerciario);
+        height: auto !important;
+    
+        .titulos{
+            display: flex !important;
+            justify-content: center !important;
+            color: $font-white;
+            font-size: 20px;
+        }
+    
+        .carousel-item{
+            height: 600px;
+            .imgModa{
+                width: auto !important;
+                height: 80%;
+                margin: 0 auto;
+            }
+        }
+        
+    
+        .carousel-control-prev {
+            margin-left: 10px;
+        }
+    
+        .carousel-control-next{
+            margin-right: 10px;
+        }
+    }
+
+    // FOOTER
+
+    footer{
+
+        height: 9em;
+
+        .whatsapp-instagram{
+            display: flex;
+            justify-content: center;
+            font-size: 15px;
+    
+    
+    
+            .celular{
+                margin-left: 3px;
+                color: $font-white;
+            }
+    
+            .instagram{
+                margin-right: 3px;
+                color: $font-white;
+            }
+    
+        }
+    
+        .derechosReservados{
+            font-size: 15px;
+            justify-content: center;
+        }
+        .sitioDesarrollado{
+            font-size: 15px;
+            justify-content: center;
+        }
+
+    }
+
+    // CUESTIONARIO
+
+    .mainCuestionario{
+
+        .sectionCuestionario{
+            padding-top: 3em;
+            padding-bottom: 3em;
+        }
+    
+        background-color: #D9C2AD;
+    
+        .divUno {
+            color: $font-white;
+            font-size: 15px;
+            text-align: center;
+            width: 80%;
+            border-radius: 1.5em;
+            position: relative;
+            left: 10%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, .7);
+            background-color: #232426;
+        
+            .botonCuestionario{
+                @include botones($font-white, #8c796db2);
+            }
+        }
+    
+        
+        
+        .divDos {
+            color: $font-white;
+            font-size: 15px;
+            text-align: center;
+            width: 80%;
+            border-radius: 1.5em;
+            position: relative;
+            left: 10%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, .7);
+            background-color: #8C796D;
+        }
+    
+        
+    }
+
+    // CONTACTO
+
+    .seccionContacto{
+        background-image: url("../img/tela-blanca.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 800px;
+        background-attachment: fixed;
+    
+        .contactoBox{
+            display: inline-block;
+            width: 30em;
+            height: 33em;
+            background-color: #141313ac;
+            text-align: center;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+    
+            .formulario{
+                font-size: 15px;
+                color: #fdf4f4;
+                text-align: center;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+    
+                .boton{
+                    @include botones ($font-black, rgba(110, 60, 68, 0.678)) ;
+                }
+            } 
+        }
+    }
+
+    
+
+}

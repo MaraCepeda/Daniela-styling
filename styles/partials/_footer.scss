@@ -1,0 +1,48 @@
+footer{
+    color: $font-white;
+    background-color: $background-footer;
+    font-size: x-large;
+
+    .whatsapp-instagram{
+        display: flex;
+        justify-content: space-between;
+    }
+    .celular{
+        display: flex;
+    justify-content: center;
+    text-decoration: none;
+
+    .whatsapp{
+        margin-left: 18em;
+        font-size: 2em;
+        color: $font-white;
+    }
+    .whatsapp:hover{
+        color: $font-black;
+    }
+    }
+    .instagram{
+        text-decoration: none;
+        display: flex;
+    justify-content: center;
+
+    .iconoIg{
+        margin-right: 18em;
+        font-size: 2em;
+        color: $font-white;
+    }
+    .iconoIg:hover{
+        color: $font-black;
+    }
+    }
+
+    .derechosReservados{
+        justify-content: center;
+    }
+    .sitioDesarrollado{
+        justify-content: center;
+    }
+
+
+}
+
